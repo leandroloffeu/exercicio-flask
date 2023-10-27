@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de funcionario</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário funcionario</title>
+    
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+
+        form.submitted {
+            transform: translateY(-100%);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 12px);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form method="post">
+        <h1>Cadastrar Funcionário</h1>
+        <label for="setor">Setor:</label>
+        <input type="text" id="setor" name="setor" required><br><br>
+
+        <label for="primeiro_nome">Nome:</label>
+        <input type="text" id="primeiro_nome" name="primeiro_nome" required><br><br>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+
+        <label for="data_admissao">Data de Admissão:</label>
+        <input type="date" id="data_admissao" name="data_admissao" required><br><br>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required><br><br>
+
+        <label for="status_funcionario">Status do Funcionário:</label>
+        <select id="status_funcionario" name="status_funcionario" required><br><br>
+            <option value=""></option>
+            <option value="1">Ativo</option>
+            <option value="0">Inativo</option>
+        </select>
+        <br><br>
+    <input type="submit" value="Cadastrar">
+    </form>
+</body>
+
+</html>
